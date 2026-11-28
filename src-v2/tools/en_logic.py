@@ -1,0 +1,33 @@
+# English UI strings for logic.ts (American setting). Sultan's speech/NLU stay Arabic.
+TR = [
+('{ n: "قبضة",','{ n: "Fists",'),('{ n: "مسدس",','{ n: "Pistol",'),('{ n: "عوزي",','{ n: "Uzi",'),('{ n: "شوزن",','{ n: "Shotgun",'),('{ n: "كلاشنكوف",','{ n: "AK-47",'),('{ n: "قناص",','{ n: "Sniper",'),('{ n: "آر بي جي",','{ n: "RPG",'),
+('{ n: "سيدان",','{ n: "Sedan",'),('{ n: "سيارة رياضية",','{ n: "Muscle Car",'),('{ n: "تاكسي",','{ n: "Taxi",'),('{ n: "سيارة شرطة", l: 4.6, w: 2.05, h: 1.4, cols: ["#1b1f3a"]','{ n: "Police Cruiser", l: 4.6, w: 2.05, h: 1.4, cols: ["#121418"]'),
+('{ n: "شاحنة",','{ n: "Box Truck",'),('{ n: "باص", l: 10, w: 2.6, h: 3.2, cols: ["#e67e22", "#16a085"]','{ n: "School Bus", l: 10, w: 2.6, h: 3.2, cols: ["#f4b400"]'),('{ n: "جيب",','{ n: "SUV",'),
+('msg(g, "الشرطة تطاردك! ★"','msg(g, "Police are after you! ★"'),('msg(g, "تمت تصفيتك!")','msg(g, "WASTED")'),('msg(g, "ركبت: "','msg(g, "Car: "'),('msg(g, "خلصت الذخيرة!")','msg(g, "Out of ammo!")'),
+('msg(g, "سلطان طاح! بيرجع بعد ١٠ ثواني")','msg(g, "Sultan is down! Back in 10 seconds")'),('msg(g, "🎤 المايك طفى")','msg(g, "🎤 Mic off")'),
+('"متصفحك ما يدعم الكلام الصوتي — جرّب كروم أو إيدج، أو استخدم G"','"Your browser has no speech recognition — try Chrome or Edge, or use G"'),
+('"المايك ممنوع هنا — اسمح للمايك من المتصفح أو استخدم G"','"Mic blocked — allow the microphone in your browser, or use G"'),('"ما لقيت مايك — استخدم G"','"No microphone found — use G"'),('"التعرّف على الصوت يحتاج إنترنت — استخدم G"','"Speech recognition needs internet — use G"'),('"المايك ممنوع هنا — استخدم G"','"Mic blocked — use G"'),
+('msg(g, "🎤 سلطان يسمعك — تكلّم (V للإيقاف)")','msg(g, "🎤 Sultan is listening — talk in Arabic (V to stop)")'),('"🔊 صوت سلطان شغّال" : "🔇 صوت سلطان طافي"','"🔊 Sultan\'s voice on" : "🔇 Sultan\'s voice off"'),
+('msg(g, "سلطان طايح، ما يقدر يرد الحين")','msg(g, "Sultan is down and can\'t answer right now")'),('msg(g, "سلطان رجع 💪")','msg(g, "Sultan is back 💪")'),('msg(g, "خرجت من المستشفى")','msg(g, "Discharged from the hospital")'),
+('msg(g, "حصلت على: "','msg(g, "Picked up: "'),('msg(g, "+ صحة")','msg(g, "+ Health")'),('msg(g, "هربت من الشرطة!")','msg(g, "You lost the cops!")'),
+('const BUD_MODES = ["اتبعني", "انتظر هنا", "روح تجوّل براحتك", "تعال"];','const BUD_MODES = ["Follow me", "Wait here", "Go wander around", "Come here"];'),
+('const BUD_STAT = ["يتبعك", "ينتظر", "يتجوّل", "جايك"];','const BUD_STAT = ["following", "waiting", "wandering", "coming"];\nconst BUD_STAT_AR = ["يتبعك", "ينتظر", "يتجوّل", "جايك"];'),
+('state: b.ride ? "راكب معك" : b.car ? "أسوق" : BUD_STAT[b.mode],','state: b.ride ? "راكب معك" : b.car ? "أسوق" : BUD_STAT_AR[b.mode],'),
+('msg(g, "سلطان: " + BUD_MODES[m] + " ✔")','msg(g, "Sultan: " + BUD_MODES[m] + " ✔")'),('msg(g, "سلطان: " + BUD_MODES[0] + " ✔")','msg(g, "Sultan: " + BUD_MODES[0] + " ✔")'),
+('"🎤 سلطان يسمعك"','"🎤 Sultan is listening"'),
+('`سلطان: طايح (${Math.ceil(b.dead)})` : `سلطان: ${b.car ? "يسوق" : b.ride ? "راكب معك" : BUD_STAT[b.mode]}  ❤${Math.round(b.hp)}`','`Sultan: down (${Math.ceil(b.dead)})` : `Sultan: ${b.car ? "driving" : b.ride ? "riding with you" : BUD_STAT[b.mode]}  ❤${Math.round(b.hp)}`'),
+('txt(c, "أوامر سلطان"','txt(c, "Sultan commands"'),
+('${Math.round(Math.hypot(p.car.vx, p.car.vz) * 3.6)} كم/س','${Math.round(Math.hypot(p.car.vx, p.car.vz) * 2.237)} mph'),
+('txt(c, "سلطان", x + g.b.x','txt(c, "Sultan", x + g.b.x'),('"تمت تصفيتك!", W / 2','"WASTED", W / 2'),('"جاري النقل للمستشفى..."','"Taking you to the hospital..."'),
+('["WASD", "المشي (حسب اتجاه الكاميرا) / القيادة"]','["WASD", "Move (camera-relative) / drive"]'),('["الماوس", "تحريك الكاميرا (اضغط على اللعبة لقفل الماوس)"]','["Mouse", "Look around (click the game to lock the mouse)"]'),
+('["كليك يسار / يمين", "إطلاق النار / تصويب وتقريب"]','["Left / right click", "Shoot / aim & zoom"]'),('["F أو E", "ركوب / نزول من أقرب سيارة"]','["F or E", "Get in / out of the nearest car"]'),('["Shift", "ركض"]','["Shift", "Sprint"]'),
+('["مسافة", "قفز / فرامل يد في السيارة"]','["Space", "Jump / handbrake"]'),('["1 - 7 / Q / عجلة الماوس", "تبديل السلاح"]','["1 - 7 / Q / mouse wheel", "Switch weapon"]'),('["الأسهم", "تدوير الكاميرا (بديل للماوس)"]','["Arrow keys", "Rotate camera (mouse alternative)"]'),
+('["M", "الخريطة الكبيرة"]','["M", "Big map"]'),('["G ثم Enter", "أوامر سلطان: اتبعني / انتظر هنا / تجوّل / تعال (G يبدّل، Enter يؤكد أو انتظر ثانيتين)"]','["G then Enter", "Sultan commands: follow / wait / wander / come (G cycles, Enter confirms)"]'),
+('["V", "المايك: كلّم سلطان بصوتك (كروم / إيدج) — مثل: تعال، انتظر، اضرب، لا تضرب، شلونك"]','["V", "Mic: talk to Sultan in Arabic (Chrome / Edge) — e.g. تعال، انتظر، اضرب، لا تضرب، شلونك"]'),
+('["B", "صوت سلطان (تشغيل / إيقاف)"]','["B", "Sultan\'s voice on / off"]'),('["Esc", "إيقاف مؤقت"]','["Esc", "Pause"]'),
+('["العصا اليسار", "المشي / التوجيه"]','["Left stick", "Move / steer"]'),('["العصا اليمين", "الكاميرا"]','["Right stick", "Camera"]'),('["R2", "إطلاق / بنزين"]','["R2", "Shoot / gas"]'),('["L2", "تصويب / فرامل وريوس"]','["L2", "Aim / brake & reverse"]'),
+('["△ المثلث", "ركوب / نزول"]','["△ Triangle", "Get in / out"]'),('["✕ الإكس", "قفز / فرامل يد"]','["✕ Cross", "Jump / handbrake"]'),('["□ المربع", "لكمة"]','["□ Square", "Punch"]'),('["L1 / R1", "تبديل السلاح"]','["L1 / R1", "Switch weapon"]'),
+('["L3", "ركض"]','["L3", "Sprint"]'),('["السهم فوق", "الخريطة"]','["D-pad up", "Map"]'),('["السهم تحت / ✕", "أوامر سلطان (تبديل / تأكيد)"]','["D-pad down / ✕", "Sultan commands (cycle / confirm)"]'),('["R3 (اضغط العصا اليمين)", "المايك: كلّم سلطان"]','["R3 (click right stick)", "Mic: talk to Sultan"]'),('["Options", "إيقاف / متابعة"]','["Options", "Pause / resume"]'),
+]
+TR += [('txt(c, "أنت: " + VOX.heard','txt(c, "You: " + VOX.heard'),('txt(c, "أنت: " + VOX.interim','txt(c, "You: " + VOX.interim'),('txt(c, "سلطان: " + b.sayS','txt(c, "Sultan: " + b.sayS')]
+TR += [('  c.direction = "rtl";','  c.direction = "ltr";')]
